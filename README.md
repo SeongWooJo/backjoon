@@ -1,8 +1,10 @@
 # 백준 Python3 듀토리얼
 ## 데이터 입력
 1.  데이터가 **한 줄**로 입력됬는데 **여러 개의 변수**로 입력을 받고 싶은 경우
-  - a, b = map(int, input.split()) : 공백 기준으로 구분된 데이터가 많지 않을 때 (살짝 비효율적), int 형식으로 된 데이터를 입력 받을 떄
-  - a, b = map(int, sys.stdin.readline().split()) : 이게 빠른방식, int 형식으로 된 데이터를 입력 받을 떄
+  - a, b = map(int, input.split())
+    - 공백 기준으로 구분된 데이터가 많지 않을 때 (살짝 비효율적), int 형식으로 된 데이터를 입력 받을 떄
+  - a, b = map(int, sys.stdin.readline().split())
+    - 이게 빠른방식, int 형식으로 된 데이터를 입력 받을 떄
 
 2.  **문자열**로 이루어진 데이터를 받고 싶은 경우
   - data = sys.stdin.readline().rstrip()
@@ -12,11 +14,30 @@
     - 만약 인자가 없다면 공백을 제거
   
 3. 한줄로 주어지는 데이터를 list로 받고 싶은 경우, 이때 위의 함수에서 한 줄로 주어지는 데이터를 하나의 list로 얻기 위해선 list(map())으로 입력을 받아야한다.
- - board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)] : N 은 입력받아야하는 줄의 개수
+ - board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
+   - N 은 입력받아야하는 줄의 개수
    - [x for _ in range(N)] x가 N번 실행되는 각 결과를 list의 원소로 구성되는 list 객체를 얻을 수 있는 방식
   
 4.  
 
+## 데이터 출력
+1. (python 3.6 이상) f-string
+  - print(f"정답은 {answer} 입니다.")
+    - 문자열 앞에 **f**를 붙이고, **{"변수명"}** 중괄호 안에 변수명을 기입하여, 변수와 문자열을 함께 출력 가능
+
+2. list의 대괄호를 없애서 출력
+  - print(*result)
+    - list인 변수의 변수명 앞에 *를 붙여 대괄호가 제거된 값을 출력 가능하다.
+    - [1, 2, 3] -> 1 2 3  
+3. 
+
+## 데이터 초기화
+1. 2차원 list 생성
+  - a = [ [0] * n for _ in range(m) ]
+    - a[0][0] = 1로 선언할 시 => [[0, 1],[0, 0],[0, 0]] 
+  - a = [ [0] * n ] * m
+    - a[0][0] = 1로 선언할 시 => [[0, 1],[0, 1],[0, 1]]  
+2.  
 ## 참고함수
 1. map(function, iterable)
 
