@@ -18,7 +18,14 @@
    - N 은 입력받아야하는 줄의 개수
    - [x for _ in range(N)] x가 N번 실행되는 각 결과를 list의 원소로 구성되는 list 객체를 얻을 수 있는 방식
   
-4.  
+4. input()과 sys.stdin.readline()의 차이
+  - input() 개행문자를 포함하지 않는 값을 저장
+  - sys.stdin.readline() : 개행문자 '\n' 등을 포함하는 문자열을 저장
+
+
+      ex) "abc\n"을 입력으로 주어졌을 떄 input() => abc로 저장 | sys.stdin.readline() => "abc\n"으로 저장
+
+5.   
 
 ## 데이터 출력
 1. (python 3.6 이상) f-string
