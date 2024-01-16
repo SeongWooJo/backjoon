@@ -1,4 +1,14 @@
 # 백준 Python3 듀토리얼
+## 새 문제 시작 폼
+    
+```python
+import sys
+input = sys.stdin.readline()
+def main():
+    
+    print(result)
+main()
+```
 ## 데이터 입력
 #### 0. 단순한 입력받기(int type으로 입력받고 싶은 경우)
 ```
