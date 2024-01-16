@@ -102,6 +102,71 @@ You need python
 \a | 벨 소리(출력할 때 PC 스피커에서 '삑' 소리가 난다)
 \b | 백 스페이스
 \000 | 널 문자
+
+#### 3. 문자열 연산
+1. \+ 연산
+    
+```python
+head = "퓨우우"
+tail = "저어언!!"
+result = head+tail
+```
+```
+'퓨우우저어언!!'
+```
+2. \* 연산
+    
+```python
+a = "아기상어"
+b = " 뚜뚜루루뚜루"
+result = a + b*2
+```
+```
+'아기상어 뚜뚜루루뚜루 뚜뚜루루뚜루'
+```
+
+3. 문자열 길이
+    
+```python
+a = '나는야 완벽한 런처'
+result = len(a)
+```
+```
+10
+```
+4. 문자열 슬라이싱, 인덱싱
+    
+```python
+a = "0123 567 9"
+a[0]
+a[4]
+a[-0]
+a[-1]
+a[0:4]
+```
+    
+```
+'0'
+' '
+'0'
+'9'
+"0123"
+```
+5. 문자열 포매팅
+    
+```python
+a = "Hutao is a %d-star character." % 5
+b = "%s is a 5-star character." % "Yelan"
+character = "Furina"
+c = "%s is a 5-star character." % character
+```
+
+```
+'Hutao is a 5-star character.'
+'Yelan is a 5-star character.'
+'Furina is a 5-star character.'
+```
+ 
 ## 참고함수
 1. map(function, iterable)
 
