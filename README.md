@@ -7,6 +7,31 @@ a = int(input())
 ```
 b = int(sys.stdin.readline())
 ```
+#### 0-1. 참고사항(sys.stdin 함수)
+    
+```python
+a = sys.stdin.read() ## 입력 파일의 끝까지 입력
+b = sys.stdin.readline() ##'\n'을 포함 한 줄만 입력
+c = sys.stdin.readlines() ## 입력 파일 각 줄의 '\n'을 포함해 줄별로 리스트 요소로 저장
+```
+```
+d = sys.stdin.read().splitlines() ## 파일 끝까지 읽고 개행문자를 제외한 한 줄별 리스트로 저장
+```
+```
+#1 a의 경우
+Hello
+Backjon
+Online Judge
+
+#2 b의 경우
+'Hello\n'
+
+#3 c의 경우
+['Hello\n', 'Backjon\n', 'Online Judge\n']
+
+#4 d의 경우
+['Hello', 'Backjon', 'Online Judge']
+```
 #### 1.  데이터가 **한 줄**로 입력됬는데 **여러 개의 변수**로 입력을 받고 싶은 경우
 ##### - 공백 기준으로 구분된 데이터가 많지 않을 때 (살짝 비효율적), int 형식으로 된 데이터를 입력 받을 떄
 ```
