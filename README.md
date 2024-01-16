@@ -159,11 +159,14 @@ a = "Hutao is a %d-star character." % 5
 b = "%s is a 5-star character." % "Yelan"
 character = "Furina"
 c = "%s is a 5-star character." % character
+stars = 5
+d = "%s is a %d-star character." % (character, stars)
 ```
 
 ```
 'Hutao is a 5-star character.'
 'Yelan is a 5-star character.'
+'Furina is a 5-star character.'
 'Furina is a 5-star character.'
 ```
  
