@@ -64,7 +64,26 @@ board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
   - sys.stdin.readline() : 개행문자 '\n' 등을 포함하는 문자열을 저장 <br>
     ex) "abc\n"을 입력으로 주어졌을 떄 input() => abc로 저장 | sys.stdin.readline() => "abc\n"으로 저장
 
-5.   
+#### 5. 함수로 입력하는 것이 더 빠르다!
+    
+```python
+a = input()
+b = 3
+c = 4
+print(a+b+c)
+```
+    
+```python
+def main()
+    a = input()
+    b = 3
+    c = 4
+    print(a+b+c)
+main()
+```
+이 실행이 더 빠르다! python은 그냥 코드를 실행하는 것보다 함수를 통해 실행하는 것이 더 빠르다 <br>
+함수 내 실행이 전역 실행보다 빠르기 때문이다. <br>
+변수명과 값을 관리하는 네임스페이스가 함수와 전역에 별도로 있고, 함수 쪽에 없으면 전역을 찾는다. <br>
 
 ## 데이터 출력
 #### 1. (python 3.6 이상) f-string
