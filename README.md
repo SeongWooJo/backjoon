@@ -111,9 +111,7 @@ iterable에 funcition을 적용시켜 반환시켜준다.
 2. 
 
 ## 참고자료
-- https://velog.io/@kho5420/Git-GitHub-%EB%A0%88%ED%8C%8C%EC%A7%80%ED%86%A0%EB%A6%ACRepository-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%86%8C%EC%8A%A4-%EC%98%AC%EB%A6%AC%EA%B8%B0
-  - github commit 방법
-- https://12716.tistory.com/entry/Github-GIthub%EC%97%90%EC%84%9C-READMEmd-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0
-  - readme.md 작성문법
-- https://paris-in-the-rain.tistory.com/72
-  - 백준 입력방법
+#### 1. [github commit 방법](https://velog.io/@kho5420/Git-GitHub-%EB%A0%88%ED%8C%8C%EC%A7%80%ED%86%A0%EB%A6%ACRepository-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%86%8C%EC%8A%A4-%EC%98%AC%EB%A6%AC%EA%B8%B0)
+#### 2. [readme.md 작성문법](https://12716.tistory.com/entry/Github-GIthub%EC%97%90%EC%84%9C-READMEmd-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
+#### 3. [백준 입력방법](https://paris-in-the-rain.tistory.com/72)
+
